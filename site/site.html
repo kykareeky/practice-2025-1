@@ -1,1 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Open Digital Cash</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
 
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #34495e;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      display: none;
+      padding: 30px;
+      background-color: white;
+      margin: 20px;
+      border-radius: 8px;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    h2 {
+      color: #2c3e50;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    article {
+      margin-bottom: 20px;
+    }
+
+    a {
+      color: #2c3e50;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Open Digital Cash (ODC)</h1>
+    <p>Проект по проектной деятельности</p>
+  </header>
+
+  <nav>
+    <a onclick="showPage('home')">Главная</a>
+    <a onclick="showPage('about')">О проекте</a>
+    <a onclick="showPage('team')">Участники</a>
+    <a onclick="showPage('journal')">Журнал</a>
+    <a onclick="showPage('resources')">Ресурсы</a>
+  </nav>
+
+  <section id="home" class="active">
+    <h2>Аннотация проекта</h2>
+    <p><strong>Open Digital Cash</strong> – проект, посвящённый разработке ПО для использования цифровых наличных, позволяющего пользователям совершать быстрые, безопасные и низкозатратные транзакции.</p>
+    <p>В рамках этого проекта, наша группа создаёт сайт, служащий точкой входа для новых участников сообщества, предоставляя базовую информацию о технологии ODC:</p>
+    <ul>
+      <li>Принципы работы блокчейна.</li>
+      <li>Особенности мобильного приложения.</li>
+      <li>Роль защищенных SIM-карт в экосистеме.</li>
+    </ul>
+    <p>Сайт уже доступен на GitHub Pages и будет обновляться по мере развития проекта.</p>
+  </section>
+
+  <section id="about">
+    <h2>О проекте</h2>
+    <p><strong>Open Digital Cash (ODC)</strong> — это инновационный проект, направленный на создание безопасной и эффективной системы цифровых наличных. Разработанный командой студентов Московского политехнического университета, проект объединяет передовые технологии, включая собственный блокчейн на Python, мобильное приложение на Kotlin и доверенное аппаратное обеспечение на базе SIM-карт.</p>
+
+    <h3>Ключевые особенности</h3>
+    <ul>
+      <li><strong>Децентрализованная архитектура:</strong> блокчейн ODC обеспечивает прозрачность и надежность транзакций.</li>
+      <li><strong>Безопасность:</strong> криптографические алгоритмы (SHA-512, RSA-4096) и интеграция с NFC для защищенных платежей.</li>
+      <li><strong>Удобство:</strong> мобильное приложение с интуитивным интерфейсом и поддержкой P2P-переводов.</li>
+      <li><strong>Регуляторная совместимость:</strong> соответствие требованиям финансовых стандартов.</li>
+    </ul>
+
+    <h3>Этапы разработки</h3>
+    <ul>
+      <li>Серверная часть на Django с API для обработки транзакций.</li>
+      <li>Функционал NFC для бесконтактных платежей.</li>
+      <li>Статический сайт (GitHub Pages) для представления проекта.</li>
+    </ul>
+    <p><strong>ODC</strong> — это шаг к будущему цифровых финансов, где скорость, безопасность и доступность становятся стандартом.</p>
+  </section>
+
+  <section id="team">
+    <h2>Участники проекта</h2>
+    <ul>
+      <li><strong>Исламов Е.Р (241-353):</strong> изучение теории, создание сайта (HTML), написание статей для телеграм-канала проекта.</li>
+      <li><strong>Власова М.Н (241-353):</strong> изучение теории, составление документации, написание статей для телеграм-канала проекта.</li>
+      <li><strong>Турбабин В.Д (241-353):</strong> изучение теории, создание сайта (CSS), написание статей для телеграм-канала проекта.</li>
+    </ul>
+  </section>
+
+  <section id="journal">
+    <h2>Журнал проекта</h2>
+    <article>
+      <h3>Пост 1: Начало проекта</h3>
+      <p>Разработка концепции сайта и планирование архитектуры проекта. Распределение ролей в команде и обсуждение используемых технологий.</p>
+    </article>
+    <article>
+      <h3>Пост 2: Реализация сайта</h3>
+      <p>Создана HTML-структура, стилизован интерфейс, реализовано поведение навигации без перезагрузки страниц. Подключён JavaScript для управления контентом.</p>
+    </article>
+    <article>
+      <h3>Пост 3: Подготовка публикации и запуск</h3>
+      <p>Сайт загружен на GitHub Pages, проведено тестирование, подготовлены статьи и информационные материалы для Telegram-канала проекта.</p>
+    </article>
+  </section>
+
+  <section id="resources">
+    <h2>Ресурсы</h2>
+    <ul>
+      <li>Петров А., <em>Цифровая экономика</em>. — СПб.: Наука и техника, 2019. — 250 с.</li>
+      <li>Иванов И., <em>Безопасность цифровых транзакций</em>. — М.: Эксмо, 2021. — 280 с.</li>
+      <li><a href="https://cbdctracker.org/" target="_blank">Central Bank Digital Currency Tracker</a></li>
+      <li><a href="https://habr.com/ru/articles/688384/" target="_blank">Статья на Хабре: «Цифровые валюты и блокчейн»</a></li>
+      <li><a href="https://t.me/s/kibinfo" target="_blank">Клуб информационной безопасности (Telegram)</a></li>
+    </ul>
+  </section>
+
+  <script>
+    function showPage(pageId) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(section => {
+        section.classList.remove('active');
+      });
+      document.getElementById(pageId).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
