@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  header {
+    background-image: url('photo7.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav {
+    background-color: #9068a3;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  section {
+    display: none;
+    padding: 30px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 8px;
+  }
+  
+  section.active {
+    display: block;
+  }
+  
+  h2 {
+    color: #9068a3;
+  }
+  
+  ul {
+    padding-left: 20px;
+  }
+  
+  article {
+    margin-bottom: 20px;
+  }
+  
+  a {
+    color: #9068a3;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  footer {
+    background-image: url('photo7.jpg');
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* вся высота экрана */
+  }
+  
+
+  .wrapper > section {
+    flex: 1;
+  }
+ 
