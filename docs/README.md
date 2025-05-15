@@ -34,13 +34,9 @@ git push origin main            # Отправка изменений
 ### Структура сайта
 ```bash
 site/
-├── index.html # Главная страница
-├── about.html # О проекте
-├── team.html # Участники
-├── journal.html # Журнал
-├── resources.html # Ресурсы
+├── site.html #весь "скелет" сайта
 ├── css/
-│ └── style.css # Стили
+│ └── style.css # Стили и оформление
 └── images/ # Медиафайлы
 ```
 
